@@ -1,0 +1,26 @@
+Source: deepin-desktop-theme
+Section: devel
+Priority: optional
+Maintainer: caixiangrong <caixiangrong@uniontech.com>
+Build-Depends: debhelper (>= 9),
+   cmake
+Standards-Version: 3.9.8
+Homepage: http://www.deepin.org
+
+Package: deepin-theme-v23-icon
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},
+Description: deepin desktop-environment - v23-icon module
+ deepin theme v23 icon.
+
+Package: deepin-theme-hazy-color
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},
+Description: deepin desktop-environment - hazy color module
+ deepin theme hazy color.
+
+Package: deepin-theme-organic-glass
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},
+Description: deepin desktop-environment - organic glass module
+ deepin theme organic glass.
