@@ -24,3 +24,12 @@ Architecture: any
 Depends: ${misc:Depends},${shlibs:Depends},
 Description: deepin desktop-environment - organic glass module
  deepin theme organic glass.
+
+Package: deepin-desktop-theme
+Architecture: any
+Depends:
+   deepin-theme-organic-glass,
+   deepin-theme-hazy-color,
+   deepin-theme-v23-icon
+Description: deepin desktop theme
+ This package is DeepinDesktopTheme
