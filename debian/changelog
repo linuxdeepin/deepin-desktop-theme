@@ -1,3 +1,11 @@
+deepin-desktop-theme (1.0.2) unstable; urgency=medium
+
+  [ TagBuilder ]
+  * fix: 创建deepin-desktop-theme虚包(Bug: 207495)(Influence: 控制中心-个性化)
+  * fix: 处理镜像冲突(Task: 225151)(Influence: 无)
+
+ -- zhaoyingzhen <zhaoyingzhen@uniontech.com>  Tue, 13 Dec 2022 19:26:36 +0800
+
 deepin-desktop-theme (1.0.1) unstable; urgency=medium
 
   * Initial release
