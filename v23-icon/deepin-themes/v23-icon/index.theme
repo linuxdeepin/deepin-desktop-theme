@@ -9,8 +9,8 @@ Hidden=false
 Example=Light.png,Dark.png
 
 [DefaultTheme]
-Wallpaper=/usr/share/wallpapers/deepin/v23-icon-light.jpg
-LockBackground=/usr/share/wallpapers/deepin/v23-icon-light.jpg
+Wallpaper=v23-icon-light.jpg
+LockBackground=v23-icon-light.jpg
 IconTheme=v23-icon
 CursorTheme=v23-icon
 AppTheme=deepin
@@ -27,8 +27,8 @@ WindowOpacity=0.9
 WindowShadow=#DDDDDD
 
 [DarkTheme]
-Wallpaper=/usr/share/wallpapers/deepin/v23-icon-dark.jpg
-LockBackground=/usr/share/wallpapers/deepin/v23-icon-dark.jpg
+Wallpaper=v23-icon-dark.jpg
+LockBackground=v23-icon-dark.jpg
 AppTheme=deepin-dark
 DockBackground=#000000
 LauncherBackground=#000000

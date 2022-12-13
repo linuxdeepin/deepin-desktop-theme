@@ -7,8 +7,8 @@ Hidden=false
 Example=Light.png,Dark.png
 
 [DefaultTheme]
-Wallpaper=/usr/share/wallpapers/deepin/organic glass-light.png
-LockBackground=/usr/share/wallpapers/deepin/organic glass-light.png
+Wallpaper=organic glass-light.png
+LockBackground=organic glass-light.png
 IconTheme=organic glass
 CursorTheme=organic glass
 AppTheme=deepin
@@ -25,8 +25,8 @@ WindowOpacity=0.9
 WindowShadow=#DDDDDD
 
 [DarkTheme]
-Wallpaper=/usr/share/wallpapers/deepin/organic glass-dark.png
-LockBackground=/usr/share/wallpapers/deepin/organic glass-dark.png
+Wallpaper=organic glass-dark.png
+LockBackground=organic glass-dark.png
 AppTheme=deepin-dark
 DockBackground=#000000
 LauncherBackground=#000000

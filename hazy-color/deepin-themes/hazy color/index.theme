@@ -7,8 +7,8 @@ Hidden=false
 Example=Light.png,Dark.png
 
 [DefaultTheme]
-Wallpaper=/usr/share/wallpapers/deepin/hazy color-light.png
-LockBackground=/usr/share/wallpapers/deepin/hazy color-light.png
+Wallpaper=hazy color-light.png
+LockBackground=hazy color-light.png
 IconTheme=hazy color
 CursorTheme=hazy color
 AppTheme=deepin
@@ -25,8 +25,8 @@ WindowOpacity=0.9
 WindowShadow=#DDDDDD
 
 [DarkTheme]
-Wallpaper=/usr/share/wallpapers/deepin/hazy color-dark.png
-LockBackground=/usr/share/wallpapers/deepin/hazy color-dark.png
+Wallpaper=hazy color-dark.png
+LockBackground=hazy color-dark.png
 AppTheme=deepin-dark
 DockBackground=#000000
 LauncherBackground=#000000
