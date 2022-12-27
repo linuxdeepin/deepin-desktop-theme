@@ -21,7 +21,7 @@ DockOpacity=0.08
 LauncherBackground=#FFFFFF
 LauncherOpacity=0.08
 WindowRadius=18
-WindowOpacity=0.9
+WindowOpacity=0.4
 WindowShadow=#DDDDDD
 
 [DarkTheme]
