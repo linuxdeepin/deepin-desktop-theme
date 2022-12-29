@@ -1,3 +1,11 @@
+deepin-desktop-theme (1.0.3) unstable; urgency=medium
+
+  [ TagBuilder ]
+  * fix: 修改高可定主题包活动色(Task: 224771)(Influence: 控制中心-个性化-主题)
+  * fix: 修改透明度默认值(Bug: 179325)(Influence: 控制中心-个性化-透明度调节-默认值)
+
+ -- zhaoyingzhen <zhaoyingzhen@uniontech.com>  Thu, 29 Dec 2022 15:15:20 +0800
+
 deepin-desktop-theme (1.0.2) unstable; urgency=medium
 
   [ TagBuilder ]
