@@ -7,11 +7,11 @@ Build-Depends: debhelper (>= 9),
 Standards-Version: 3.9.8
 Homepage: http://www.deepin.org
 
-Package: deepin-theme-v23-icon
+Package: deepin-theme-flow
 Architecture: any
 Depends: ${misc:Depends},${shlibs:Depends},
-Description: deepin desktop-environment - v23-icon module
- deepin theme v23 icon.
+Description: deepin desktop-environment - flow theme
+ deepin theme flow icon.
 
 Package: deepin-theme-hazy-color
 Architecture: any
@@ -30,6 +30,6 @@ Architecture: any
 Depends:
    deepin-theme-organic-glass,
    deepin-theme-hazy-color,
-   deepin-theme-v23-icon
+   deepin-theme-flow
 Description: deepin desktop theme
  This package is DeepinDesktopTheme
