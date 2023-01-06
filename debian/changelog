@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.0.4) unstable; urgency=medium
+
+  [ TagBuilder ]
+  * fix: 更新主题资源(Task: 234693)(Influence: 控制中心-个性化-主题)
+
+ -- lvpeilong <lvpeilong@uniontech.com>  Fri, 06 Jan 2023 15:39:38 +0800
+
 deepin-desktop-theme (1.0.3) unstable; urgency=medium
 
   [ TagBuilder ]
