@@ -1,7 +1,5 @@
 [Deepin Theme]
 Name=organic glass
-Name[zh_CN]=有机玻璃
-Comment=organic glass
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false

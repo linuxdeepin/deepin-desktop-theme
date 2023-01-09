@@ -1,14 +1,14 @@
 [Deepin Theme]
-Name=flow
+Name=Vintage
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false
 Example=cover-light.png,cover-dark.png
 
 [DefaultTheme]
-Wallpaper=flow-light.jpg
-LockBackground=flow-light.jpg
-IconTheme=flow
+Wallpaper=file:///usr/share/wallpapers/deepin/lucian-dachman-qxO2PBn7eKU-unsplash.jpg
+LockBackground=file:///usr/share/wallpapers/deepin/lucian-dachman-qxO2PBn7eKU-unsplash.jpg
+IconTheme=Vintage
 CursorTheme=bloom
 AppTheme=deepin
 StandardFont=Noto Sans CJK SC
@@ -29,5 +29,5 @@ DockBackground=#000000
 LauncherBackground=#000000
 WindowShadow=#222222
 ActiveColor=#024CCA
-Wallpaper=flow-dark.jpg
-LockBackground=flow-dark.jpg
+Wallpaper=file:///usr/share/wallpapers/deepin/garrett-patz-Ilu1Vv6EYds-unsplash.jpg
+LockBackground=file:///usr/share/wallpapers/deepin/garrett-patz-Ilu1Vv6EYds-unsplash.jpg
