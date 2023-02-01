@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.0.5) unstable; urgency=medium
+
+  [ TagBuilder ]
+  * fix: 添加dock面板图标至flow(Bug: 184085)(Influence: flow主题资源更新)
+
+ -- lvpeilong <lvpeilong@uniontech.com>  Wed, 01 Feb 2023 10:33:07 +0800
+
 deepin-desktop-theme (1.0.4.1) unstable; urgency=medium
 
   [ Deepin Packages Builder ]
