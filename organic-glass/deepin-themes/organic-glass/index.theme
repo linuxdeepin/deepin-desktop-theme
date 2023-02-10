@@ -1,27 +1,50 @@
 [Deepin Theme]
 Name=organic glass
+Name[zh_CN]=organic glass
+
+# 默认主题，通常为亮色主题
 DefaultTheme=DefaultTheme
+# [暗色主题，可选，配置为覆盖默认主题配置，即暗色主题中没有的会用默认主题里的配置]
 DarkTheme=DarkTheme
+# [是否在主题选择用户界面中隐藏，不给出则为false]
 Hidden=false
+# 示例图片，用','分隔，第一个为封面
 Example=cover-light.png,cover-dark.png
 
 [DefaultTheme]
-Wallpaper=organic-glass-abstract.png
-LockBackground=organic-glass-abstract.png
-IconTheme=organic-glass
-CursorTheme=organic-glass
+# 桌面壁纸 图片可用系统自带图片(绝对路径)，主题内图片(相对路径)
+Wallpaper=organic glass-dark.png
+# 锁屏壁纸
+LockBackground=organic glass-dark.png
+# 应用图标
+IconTheme=organic glass
+# 鼠标样式
+CursorTheme=organic glass
+# 应用主题 应用程序配色主题，在/usr/share/themes目录下，通常亮色主题为deepin,暗色主题为deepin-dark
 AppTheme=deepin
+# 标准字体
 StandardFont=Noto Sans CJK SC
-MonospaceFont=Noto Mono
+# 等宽字体
+MonospaceFont=Noto MonoB
+# 字体大小
 FontSize=10.5
+# 活动色
 ActiveColor=#0081FF
+# 任务栏底色色值
 DockBackground=#FFFFFF
+# 任务栏透明度
 DockOpacity=0.08
+# 启动器底色色值
 LauncherBackground=#FFFFFF
+# 启动器透明度
 LauncherOpacity=0.08
+# 窗口圆角大小
 WindowRadius=18
-WindowOpacity=0.4
+# 窗口透明度
+WindowOpacity=0.9
+# 窗口阴影
 WindowShadow=#DDDDDD
+
 
 [DarkTheme]
 AppTheme=deepin-dark
@@ -29,5 +52,5 @@ DockBackground=#000000
 LauncherBackground=#000000
 WindowShadow=#222222
 ActiveColor=#024CCA
-Wallpaper=organic-glass-photosphere.png
-LockBackground=organic-glass-photosphere.png
+Wallpaper=organic-glass-dark.png
+LockBackground=organic glass-dark.png

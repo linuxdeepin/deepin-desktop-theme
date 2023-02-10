@@ -37,6 +37,12 @@ Depends: ${misc:Depends},${shlibs:Depends},
 Description: deepin desktop-environment - organic glass module
  deepin theme organic glass.
 
+Package: deepin-theme-macaron
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},
+Description: deepin desktop-environment - macaron module
+ deepin theme organic glass.
+
 Package: deepin-desktop-theme
 Architecture: any
 Depends:
@@ -44,6 +50,7 @@ Depends:
    deepin-theme-vintage,
    deepin-theme-organic-glass,
    deepin-theme-hazy-color,
-   deepin-theme-flow
+   deepin-theme-flow,
+   deepin-theme-macaron
 Description: deepin desktop theme
  This package is DeepinDesktopTheme
