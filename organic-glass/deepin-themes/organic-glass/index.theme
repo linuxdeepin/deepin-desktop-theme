@@ -1,20 +1,15 @@
 [Deepin Theme]
 Name=organic glass
+Name[zh_CN]=organic glass
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false
-Example=cover-light.png,cover-dark.png
 
 [DefaultTheme]
-Wallpaper=organic-glass-abstract.png
-LockBackground=organic-glass-abstract.png
-IconTheme=organic-glass
-CursorTheme=organic-glass
 AppTheme=deepin
 StandardFont=Noto Sans CJK SC
 MonospaceFont=Noto Mono
 FontSize=10.5
-ActiveColor=#0081FF
 DockBackground=#FFFFFF
 DockOpacity=0.08
 LauncherBackground=#FFFFFF
@@ -22,6 +17,11 @@ LauncherOpacity=0.08
 WindowRadius=18
 WindowOpacity=0.4
 WindowShadow=#DDDDDD
+ActiveColor=#0081FF
+Wallpaper=organic-glass-dark.png
+LockBackground=organic-glass-dark.png
+IconTheme=organic-glass
+CursorTheme=organic-glass
 
 [DarkTheme]
 AppTheme=deepin-dark
@@ -29,5 +29,5 @@ DockBackground=#000000
 LauncherBackground=#000000
 WindowShadow=#222222
 ActiveColor=#024CCA
-Wallpaper=organic-glass-photosphere.png
-LockBackground=organic-glass-photosphere.png
+Wallpaper=organic-glass-dark.png
+LockBackground=organic-glass-dark.png

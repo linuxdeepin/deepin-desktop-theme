@@ -1,20 +1,16 @@
 [Deepin Theme]
 Name=hazy color
+Name[zh_CN]=hazy color
+Example=cover-light.png,cover-dark.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false
-Example=cover-light.png,cover-dark.png
 
 [DefaultTheme]
-Wallpaper=hazy-color-light.png
-LockBackground=hazy-color-light.png
-IconTheme=hazy-color
-CursorTheme=hazy-color
 AppTheme=deepin
 StandardFont=Noto Sans CJK SC
 MonospaceFont=Noto Mono
 FontSize=10.5
-ActiveColor=#DF4187
 DockBackground=#FFFFFF
 DockOpacity=0.08
 LauncherBackground=#FFFFFF
@@ -22,6 +18,11 @@ LauncherOpacity=0.08
 WindowRadius=18
 WindowOpacity=0.4
 WindowShadow=#DDDDDD
+ActiveColor=#DF4187
+Wallpaper=hazy-color-light.jpg
+LockBackground=hazy-color-light.jpg
+IconTheme=hazy-color
+CursorTheme=hazy-color
 
 [DarkTheme]
 AppTheme=deepin-dark
@@ -29,5 +30,5 @@ DockBackground=#000000
 LauncherBackground=#000000
 WindowShadow=#222222
 ActiveColor=#A82B62
-Wallpaper=hazy-color-dark.png
-LockBackground=hazy-color-dark.png
+Wallpaper=hazy-color-dark.jpg
+LockBackground=hazy-color-dark.jpg
