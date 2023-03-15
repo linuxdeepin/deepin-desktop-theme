@@ -1,20 +1,16 @@
 [Deepin Theme]
 Name=bloom
+Name[zh_CN]=bloom
+Example=cover-light.png,cover-dark.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false
-Example=cover-light.png,cover-dark.png
 
 [DefaultTheme]
-Wallpaper=file:///usr/share/wallpapers/deepin/Colorful-Abstraction03.jpg
-LockBackground=file:///usr/share/wallpapers/deepin/Colorful-Abstraction03.jpg
-IconTheme=bloom
-CursorTheme=bloom
 AppTheme=deepin
 StandardFont=Noto Sans CJK SC
 MonospaceFont=Noto Mono
 FontSize=10.5
-ActiveColor=#0081FF
 DockBackground=#FFFFFF
 DockOpacity=0.08
 LauncherBackground=#FFFFFF
@@ -22,10 +18,14 @@ LauncherOpacity=0.08
 WindowRadius=18
 WindowOpacity=0.4
 WindowShadow=#DDDDDD
+ActiveColor=#0081FF
+Wallpaper=file:///usr/share/wallpapers/deepin/Colorful-Abstraction03.jpg
+LockBackground=file:///usr/share/wallpapers/deepin/Colorful-Abstraction03.jpg
+IconTheme=bloom
+CursorTheme=bloom
 
 [DarkTheme]
 AppTheme=deepin-dark
-IconTheme=bloom-dark
 DockBackground=#000000
 LauncherBackground=#000000
 WindowShadow=#222222

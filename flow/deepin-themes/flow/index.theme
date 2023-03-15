@@ -1,20 +1,18 @@
 [Deepin Theme]
 Name=flow
+Name[zh_CN]=flow
+Comment=like a moving cloud and flowing river
+Comment[zh_CN]=似行云如流水
+Example=cover-light.png,cover-dark.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false
-Example=cover-light.png,cover-dark.png
 
 [DefaultTheme]
-Wallpaper=flow-light.jpg
-LockBackground=flow-light.jpg
-IconTheme=flow
-CursorTheme=bloom
 AppTheme=deepin
 StandardFont=Noto Sans CJK SC
 MonospaceFont=Noto Mono
 FontSize=10.5
-ActiveColor=#0081FF
 DockBackground=#FFFFFF
 DockOpacity=0.08
 LauncherBackground=#FFFFFF
@@ -22,6 +20,11 @@ LauncherOpacity=0.08
 WindowRadius=18
 WindowOpacity=0.4
 WindowShadow=#DDDDDD
+ActiveColor=#0081FF
+Wallpaper=flow-light.png
+LockBackground=flow-light.png
+IconTheme=flow
+CursorTheme=bloom
 
 [DarkTheme]
 AppTheme=deepin-dark
@@ -29,5 +32,5 @@ DockBackground=#000000
 LauncherBackground=#000000
 WindowShadow=#222222
 ActiveColor=#024CCA
-Wallpaper=flow-dark.jpg
-LockBackground=flow-dark.jpg
+Wallpaper=flow-dark.png
+LockBackground=flow-dark.png
