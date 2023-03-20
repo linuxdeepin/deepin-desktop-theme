@@ -18,4 +18,4 @@ Any usage issues can ask for help via
 
 ## License
 
-deepin-tool-kit is licensed under [LGPL-3.0-or-later](LICENSE).
+deepin-tool-kit is licensed under [CC-BY-4.0](LICENSE).
