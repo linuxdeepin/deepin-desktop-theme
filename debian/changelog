@@ -1,3 +1,11 @@
+deepin-desktop-theme (1.0.6) unstable; urgency=medium
+
+  * 新增马卡龙主题
+  * 补充部分常见应用图标
+  * 压缩 dci 图标大小
+
+ -- chenke <chenke@deepin.org>  Mon, 03 Apr 2023 13:59:38 +0800
+
 deepin-desktop-theme (1.0.5) unstable; urgency=medium
 
   [ TagBuilder ]
