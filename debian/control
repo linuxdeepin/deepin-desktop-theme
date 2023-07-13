@@ -25,6 +25,12 @@ Depends: ${misc:Depends},${shlibs:Depends},deepin-icon-theme
 Description: deepin desktop-environment - flow theme
  deepin theme flow.
 
+Package: deepin-theme-square
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},deepin-icon-theme
+Description: deepin desktop-environment - square theme
+ deepin theme square.
+
 Package: deepin-theme-hazy-color
 Architecture: any
 Depends: ${misc:Depends},${shlibs:Depends},
@@ -51,6 +57,7 @@ Depends:
    deepin-theme-organic-glass,
    deepin-theme-hazy-color,
    deepin-theme-flow,
+   deepin-theme-square,
    deepin-theme-macaron
 Description: deepin desktop theme
  This package is DeepinDesktopTheme
