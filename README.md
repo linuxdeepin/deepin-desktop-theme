@@ -18,4 +18,4 @@ Any usage issues can ask for help via
 
 ## License
 
-deepin-tool-kit is licensed under [CC-BY-4.0](LICENSE).
+deepin-tool-kit is licensed under [CC-BY-4.0](LICENSES/CC-BY-4.0.txt).
