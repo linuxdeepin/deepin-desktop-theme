@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.0.8) unstable; urgency=medium
+
+  * fix organic-glass and square theme
+  * fix README by hotime
+
+ -- chenhongtao <chenhongtao@deepin.org>  Tue, 08 Aug 2023 14:20:00 +0800
+
 deepin-desktop-theme (1.0.7) unstable; urgency=medium
 
   * 新增 square 主题
