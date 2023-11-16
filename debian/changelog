@@ -1,3 +1,11 @@
+deepin-desktop-theme (1.0.9) unstable; urgency=medium
+
+  * chore: 删除多余的dci图标
+  * invalid GTK icon cache
+  * chore: Modify icon name
+
+ -- bluesky <chenchongbiao@deepin.org>  Thu, 16 Nov 2023 10:31:21 +0800
+
 deepin-desktop-theme (1.0.8) unstable; urgency=medium
 
   * fix organic-glass and square theme
