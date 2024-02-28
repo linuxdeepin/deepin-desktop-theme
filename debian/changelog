@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.0.10) unstable; urgency=medium
+
+  * release 1.0.10
+
+ -- Mike Chen <chenke@deepin.org>  Thu, 01 Feb 2024 16:12:36 +0800
+
 deepin-desktop-theme (1.0.9) unstable; urgency=medium
 
   * chore: 删除多余的dci图标
