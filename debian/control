@@ -13,6 +13,13 @@ Depends: ${misc:Depends},${shlibs:Depends},deepin-icon-theme
 Description: deepin desktop-environment - bloom theme
  deepin theme bloom.
 
+Package: deepin-theme-bloom-dark
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},deepin-icon-theme,
+ deepin-theme-bloom( =${binary:Version})
+Description: deepin desktop-environment - bloom dark theme
+ deepin theme dark bloom.
+
 Package: deepin-theme-vintage
 Architecture: any
 Depends: ${misc:Depends},${shlibs:Depends},deepin-icon-theme
@@ -53,6 +60,7 @@ Package: deepin-desktop-theme
 Architecture: any
 Depends:
    deepin-theme-bloom,
+   deepin-theme-bloom-dark,
    deepin-theme-vintage,
    deepin-theme-organic-glass,
    deepin-theme-hazy-color,
