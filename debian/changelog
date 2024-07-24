@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.0.19) unstable; urgency=medium
+
+  * bump to version 1.0.19
+
+ -- zyz <zhaoyingzhen@uniontech.com>  Wed, 24 Jul 2024 14:01:29 +0800
+
 deepin-desktop-theme (1.0.18) unstable; urgency=medium
 
   * fix: missing vintage icon(Issue: https://github.com/linuxdeepin/developer-center/issues/9591)
