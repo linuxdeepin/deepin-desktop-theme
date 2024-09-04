@@ -1,3 +1,15 @@
+deepin-desktop-theme (1.0.22) unstable; urgency=medium
+
+  * fix: clash icon display minimal
+
+ -- xionglinlin <xionglinlin@uniontech.com>  Wed, 04 Sep 2024 17:24:01 +0800
+
+ deepin-desktop-theme (1.0.21) unstable; urgency=medium
+
+  * chore: 变更bloom主题的壁纸
+
+ -- fuleyi <fuleyi@uniontech.com>  Fri, 09 Aug 2024 14:21:09 +0800
+
 deepin-desktop-theme (1.0.20) unstable; urgency=medium
 
   * release 1.0.20
