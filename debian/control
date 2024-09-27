@@ -54,7 +54,13 @@ Package: deepin-theme-macaron
 Architecture: any
 Depends: ${misc:Depends},${shlibs:Depends},
 Description: deepin desktop-environment - macaron theme
- deepin theme organic glass.
+ deepin theme macaron.
+
+Package: deepin-theme-nirvana
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},
+Description: deepin desktop-environment - nirvana theme
+ deepin theme nirvana.
 
 Package: deepin-desktop-theme
 Architecture: any
@@ -66,6 +72,7 @@ Depends:
    deepin-theme-hazy-color,
    deepin-theme-flow,
    deepin-theme-square,
-   deepin-theme-macaron
+   deepin-theme-macaron,
+   deepin-theme-nirvana
 Description: deepin desktop theme
  This package is DeepinDesktopTheme
