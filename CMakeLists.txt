@@ -11,6 +11,7 @@ add_subdirectory("hazy-color")
 add_subdirectory("organic-glass")
 add_subdirectory("macaron")
 add_subdirectory("square")
+add_subdirectory("nirvana")
 
 file(GLOB SOURCEDIRS "${CMAKE_CURRENT_SOURCE_DIR}/icons/*.dci")
 foreach ( val  ${SOURCEDIRS} )
