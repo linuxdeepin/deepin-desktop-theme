@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.0.24) unstable; urgency=medium
+
+  * feat: add icons directory to place generic icons
+
+ -- xionglinlin <xionglinlin@uniontech.com>  Fri, 25 Oct 2024 11:50:04 +0800
+
 deepin-desktop-theme (1.0.23) unstable; urgency=medium
 
   * fix: update clash icon
