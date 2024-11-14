@@ -8,7 +8,7 @@ Hidden=false
 
 [DefaultTheme]
 AppTheme=deepin
-StandardFont=Noto Sans CJK SC
+StandardFont=Source Han Sans SC
 MonospaceFont=Noto Mono
 FontSize=10.5
 DockBackground=#FFFFFF
