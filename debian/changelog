@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.1.0) unstable; urgency=medium
+
+  * release 1.1.0 
+  * chore: update index.theme and cover image
+
+ -- zhangkun <zhangkun2@uniontech.com>  Fri, 13 Dec 2024 16:49:47 +0800
+
 deepin-desktop-theme (1.0.26) UNRELEASED; urgency=medium
 
   * release 1.0.26
