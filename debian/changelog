@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.1) unstable; urgency=medium
+
+  * chore: update the thumbnail of the theme
+
+ -- zhangkun <zhangkun2@uniontech.com>  Tue, 24 Dec 2024 19:53:54 +0800
+
 deepin-desktop-theme (1.1.0) unstable; urgency=medium
 
   * release 1.1.0 
