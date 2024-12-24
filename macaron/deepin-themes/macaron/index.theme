@@ -1,7 +1,7 @@
 [Deepin Theme]
 Name=macaron
 Name[zh_CN]=macaron
-Example=cover-light.png,cover-dark.png
+Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false
