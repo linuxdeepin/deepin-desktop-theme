@@ -1,7 +1,7 @@
 [Deepin Theme]
 Name=vintage
 Name[zh_CN]=vintage
-Example=cover-light.png,cover-dark.png
+Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
 Hidden=false
