@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.2) unstable; urgency=medium
+
+  * chore: update bloom-classic and bloom-classic-dark icons
+
+ -- zhangkun <zhangkun2@uniontech.com>  Thu, 02 Jan 2025 19:09:16 +0800
+
 deepin-desktop-theme (1.1.1) unstable; urgency=medium
 
   * chore: update the thumbnail of the theme
