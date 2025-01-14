@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.3) unstable; urgency=medium
+
+  * fix: default window corner value is incorrect
+
+ -- zhangkun <zhangkun2@uniontech.com>  Tue, 14 Jan 2025 13:19:04 +0800
+
 deepin-desktop-theme (1.1.2) unstable; urgency=medium
 
   * chore: update bloom-classic and bloom-classic-dark icons
