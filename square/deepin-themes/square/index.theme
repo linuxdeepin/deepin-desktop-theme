@@ -1,8 +1,8 @@
 [Deepin Theme]
 Name=square
 Name[zh_CN]=square
-Comment=funny and cute squares
-Comment[zh_CN]=有趣又可爱的方块们
+Comment=Geometric puzzles assemble a playful desktop realm
+Comment[zh_CN]=方形拼图，拼凑桌面趣味天地
 Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme

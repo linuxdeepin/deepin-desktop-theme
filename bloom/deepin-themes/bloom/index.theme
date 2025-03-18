@@ -1,6 +1,8 @@
 [Deepin Theme]
 Name=bloom
 Name[zh_CN]=bloom
+Comment=A floral tapestry blossoms across your desktop
+Comment[zh_CN]=繁花似锦，绽放桌面
 Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme

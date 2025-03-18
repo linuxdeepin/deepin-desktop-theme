@@ -1,6 +1,8 @@
 [Deepin Theme]
 Name=vintage
 Name[zh_CN]=vintage
+Comment=Vintage charm, casting a nostalgic glow on the old days of the desktop
+Comment[zh_CN]=复古韵味，晕染桌面旧时光
 Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
