@@ -1,6 +1,8 @@
 [Deepin Theme]
 Name=nirvana
 Name[zh_CN]=nirvana
+Comment=In the light and shadow of the desktop, encounter the beauty of nirvana
+Comment[zh_CN]=于桌面光影，邂逅涅槃之美
 Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme

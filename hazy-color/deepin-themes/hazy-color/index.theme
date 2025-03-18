@@ -1,6 +1,8 @@
 [Deepin Theme]
 Name=hazy color
 Name[zh_CN]=hazy color
+Comment=Hazy vision, the flow of inspiration
+Comment[zh_CN]=朦胧视界，灵感流动
 Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme

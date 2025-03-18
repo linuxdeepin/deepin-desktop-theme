@@ -1,6 +1,8 @@
 [Deepin Theme]
 Name=organic glass
 Name[zh_CN]=organic glass
+Comment=Start a dreamy journey on the organic glass desktop
+Comment[zh_CN]=开启有机玻璃梦幻之旅
 Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
@@ -16,11 +18,11 @@ DockOpacity=0.08
 LauncherBackground=#FFFFFF
 LauncherOpacity=0.08
 WindowRadius=12
-WindowOpacity=0.9
+WindowOpacity=0.4
 WindowShadow=#DDDDDD
 ActiveColor=#1F6EE7
-Wallpaper=organic-glass-light.jpg
-LockBackground=organic-glass-light.jpg
+Wallpaper=organic-glass-dark.jpg
+LockBackground=organic-glass-dark.jpg
 IconTheme=organic-glass
 CursorTheme=organic-glass
 

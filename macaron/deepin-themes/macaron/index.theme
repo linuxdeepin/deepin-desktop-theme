@@ -1,6 +1,8 @@
 [Deepin Theme]
 Name=macaron
 Name[zh_CN]=macaron
+Comment=A playful desktop inspired by macarons
+Comment[zh_CN]=马卡龙甜趣桌面
 Example=cover.png
 DefaultTheme=DefaultTheme
 DarkTheme=DarkTheme
