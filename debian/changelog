@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.1.5) unstable; urgency=medium
+
+  * chore: link deepin-home icon from bloom to bloom-dark theme
+  * chore: update theme
+
+ -- zhangkun <zhangkun2@uniontech.com>  Thu, 20 Mar 2025 17:48:10 +0800
+
 deepin-desktop-theme (1.1.4) unstable; urgency=medium
 
   * chore: add org.gnome.SimpleScan.dci
