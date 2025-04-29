@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.1.7) unstable; urgency=medium
+
+  * chore: update theme
+  * chore: remove theme wallpaper
+
+ -- YeShanShan <yeshanshan@uniontech.com>  Tue, 29 Apr 2025 14:18:13 +0800
+
 deepin-desktop-theme (1.1.6) unstable; urgency=medium
 
   * chore: remove unnecessary quotation marks from the Name field
