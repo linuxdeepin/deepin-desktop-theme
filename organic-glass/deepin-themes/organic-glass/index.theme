@@ -21,8 +21,8 @@ WindowRadius=12
 WindowOpacity=0.4
 WindowShadow=#DDDDDD
 ActiveColor=#1F6EE7
-Wallpaper=file:///usr/share/wallpapers/deepin/organic-glass-dark.jpg
-LockBackground=file:///usr/share/wallpapers/deepin/organic-glass-dark.jpg
+Wallpaper=file:///usr/share/wallpapers/deepin/organic-glass-light.jpg
+LockBackground=file:///usr/share/wallpapers/deepin/organic-glass-light.jpg
 IconTheme=organic-glass
 CursorTheme=organic-glass
 
