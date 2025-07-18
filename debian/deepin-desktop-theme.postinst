@@ -1,0 +1,25 @@
+#!/bin/bash
+
+set -e
+
+# 图标转换工具路径
+ICON_CONVERTER="/usr/libexec/deepin-desktop-theme/xdgicon2dci"
+
+case "$1" in
+    configure|triggered)
+        # 触发图标转换
+        if [ -x "$ICON_CONVERTER" ]; then
+            "$ICON_CONVERTER" || true
+        fi
+        ;;
+    abort-upgrade|abort-remove|abort-deconfigure)
+        ;;
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0 
