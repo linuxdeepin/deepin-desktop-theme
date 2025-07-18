@@ -19,7 +19,7 @@ Copyright: UnionTech Software Technology Co., Ltd.
 License: CC-BY-4.0
 
 # CMake
-Files: CMakeLists.txt 
+Files: CMakeLists.txt tools/CMakeLists.txt tools/*/CMakeLists.txt
 Copyright: None
 License: CC0-1.0
 

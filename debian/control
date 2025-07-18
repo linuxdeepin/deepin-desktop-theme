@@ -3,7 +3,10 @@ Section: devel
 Priority: optional
 Maintainer: caixiangrong <caixiangrong@uniontech.com>
 Build-Depends: debhelper (>= 9),
-   cmake
+   cmake,
+   qt6-base-dev,
+   qt6-base-private-dev,
+   libdtk6core-dev,
 Standards-Version: 3.9.8
 Homepage: http://www.deepin.org
 
@@ -73,6 +76,8 @@ Depends:
    deepin-theme-flow,
    deepin-theme-square,
    deepin-theme-macaron,
-   deepin-theme-nirvana
+   deepin-theme-nirvana,
+   libdtk6gui-bin,
+   ${misc:Depends},${shlibs:Depends},
 Description: deepin desktop theme
  This package is DeepinDesktopTheme
