@@ -1,3 +1,11 @@
+deepin-desktop-theme (1.1.10) unstable; urgency=medium
+
+  * feat: add xdgicon2dci tool and update build configuration
+  * chore: remove redundant icon installation path
+  * feat: Move the default theme icon to the public icon area
+
+ -- zhangkun <zhangkun2@uniontech.com>  Fri, 1 Aug 2025 12:31:58 +0800
+
 deepin-desktop-theme (1.1.9) unstable; urgency=medium
 
   * feat: add deepin-scanner icon symlinks
