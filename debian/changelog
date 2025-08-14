@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.12) unstable; urgency=medium
+
+  * fix: update all network icons to common folder.
+
+ -- wujiangyu <wujiangyu@uniontech.com>  Thu, 14 Aug 2025 17:24:07 +0800
+
 deepin-desktop-theme (1.1.11) unstable; urgency=medium
 
   * chore: update theme
