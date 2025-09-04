@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.1.14) unstable; urgency=medium
+
+  * Revert "chore: remove redundant icon installation path"
+  * Revert "feat: Move the default theme icon to the public icon area"
+
+ -- YeShanShan <yeshanshan@uniontech.com>  Thu, 04 Sep 2025 21:42:07 +0800
+
 deepin-desktop-theme (1.1.13) unstable; urgency=medium
 
   * chore: remove redundant icon symlinks
