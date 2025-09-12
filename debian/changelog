@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.15) unstable; urgency=medium
+
+  * fix: remove exit call in postinst script
+
+ -- zhangkun <zhangkun2@uniontech.com>  Fri, 12 Sep 2025 09:54:45 +0800
+
 deepin-desktop-theme (1.1.14) unstable; urgency=medium
 
   * Revert "chore: remove redundant icon installation path"
