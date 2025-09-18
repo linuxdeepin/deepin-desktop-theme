@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.16) unstable; urgency=medium
+
+  * feat: add user-desktop symlinks for icon themes
+
+ -- YeShanShan <yeshanshan@uniontech.com>  Thu, 18 Sep 2025 20:05:24 +0800
+
 deepin-desktop-theme (1.1.15) unstable; urgency=medium
 
   * fix: remove exit call in postinst script
