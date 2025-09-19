@@ -25,6 +25,7 @@ Q_LOGGING_CATEGORY(xdgIcon2DciLog, "xdgicon2dci")
 #define DCI_COMPRESSION_LEVEL 95
 #define DEFAULT_SEARCH_PATH "/usr/share/icons"
 #define RECORD_SPLIT '|'
+#define DPKG_PATH "/usr/bin/dpkg"
 
 static const QStringList SUPPORTED_ICON_FILES {"*.svg", "*.png"};
 static const QList<QIconDirInfo::Context> SUPPORTED_CONTEXT {QIconDirInfo::Applications};
@@ -49,6 +50,7 @@ private:
     static bool doConvert(const QString &sourceFile, const QString &destFile);
     static QString getFileHash(const QString &filePath);
     static bool ensureDirectoryExists(const QString &dirPath);
+    static bool maybePkgTrackedFile(const QString &filePath);
 
     void convertMultiSizeIconBatch(const QString &tempDirSrc, const QString &tempDirDst);
     void copyDciFiles(const QString &fromDir, QMap<QString, QString> &recordCache);
@@ -138,6 +140,21 @@ bool XDGIcon2Dci::ensureDirectoryExists(const QString &dirPath)
         return false;
     }
     return true;
+}
+
+bool XDGIcon2Dci::maybePkgTrackedFile(const QString &filePath)
+{
+    // 如果dpkg不存在，则可能是被其他包管理器管理的，不能盲目复制
+    if (!QFile::exists(DPKG_PATH)) {
+        return true;
+    }
+
+    QProcess process;
+    QStringList args;
+    args << "-S" << filePath;
+    process.start(DPKG_PATH, args);
+    process.waitForFinished(1000);
+    return process.exitCode() == 0;
 }
 
 void XDGIcon2Dci::collectIconTasks()
@@ -256,20 +273,22 @@ void XDGIcon2Dci::copyDciFiles(const QString &fromDir, QMap<QString, QString> &r
         QString targetPath = m_targetDir + "/" + fileInfo.fileName();
         QString newFileHash = getFileHash(sourcePath);
 
-        // 通过Hash是否变更检查是否需要复制
         bool needCopy = false;
-        if (!QFile::exists(targetPath)) {
+        if (!QFile::exists(targetPath)) { // 目标文件不存在时尝试复制，防止覆盖其他包安装的图标文件
             needCopy = true;
-        } else if (recordCache.contains(iconName) 
-            && recordCache.value(iconName) != newFileHash) {
-            needCopy = true;
+        } else if (recordCache.contains(iconName)) {  // 如果目标文件存在，记录了hash，则说明是转换工具转换的
+            if (maybePkgTrackedFile(targetPath)) { // 如果被包管理器跟踪，则不进行复制，并尝试删除记录
+                qCInfo(xdgIcon2DciLog) << "skipped (pkg tracked):" << targetPath;
+                recordCache.remove(iconName);
+            } else if (recordCache.value(iconName) != newFileHash) { // hash不同时才复制
+                needCopy = true;
+            }
         }
 
         if (needCopy) {
             if (QFile::exists(targetPath)) {
                 QFile::remove(targetPath);
             }
-
             if (QFile::copy(sourcePath, targetPath)) {
                 qCDebug(xdgIcon2DciLog) << "Installed:" << targetPath;
                 copiedCount++;
@@ -285,7 +304,11 @@ void XDGIcon2Dci::copyDciFiles(const QString &fromDir, QMap<QString, QString> &r
     for (const QString &iconName : needDeleteIcons) {
         QString targetFile = m_targetDir + "/" + iconName + ".dci";
         if (QFile::exists(targetFile)) {
-            QFile::remove(targetFile);
+            if (!maybePkgTrackedFile(targetFile)) {
+                QFile::remove(targetFile);
+            } else {
+                qCInfo(xdgIcon2DciLog) << "skipped delete (pkg tracked):" << targetFile;
+            }
             recordCache.remove(iconName);
             qCDebug(xdgIcon2DciLog) << "Removed:" << targetFile;
         }
