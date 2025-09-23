@@ -260,9 +260,13 @@ void XDGIcon2Dci::copyDciFiles(const QString &fromDir, QMap<QString, QString> &r
         bool needCopy = false;
         if (!QFile::exists(targetPath)) {
             needCopy = true;
-        } else if (recordCache.contains(iconName) 
-            && recordCache.value(iconName) != newFileHash) {
-            needCopy = true;
+        } else if (recordCache.contains(iconName)) {
+            QString targetFileHash = getFileHash(targetPath);
+            if (targetFileHash != recordCache.value(iconName)) { // 记录的hash和目前已经存在文件hash不一致，说明目标文件已经被其他操作修改，不再跟踪
+                recordCache.remove(iconName);
+            } else if (recordCache.value(iconName) != newFileHash) {
+                needCopy = true;
+            }
         }
 
         if (needCopy) {
