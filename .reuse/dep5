@@ -29,6 +29,6 @@ Copyright: None
 License: CC0-1.0
 
 # res
-Files: flow/* bloom/* bloom-dark/* hazy-color/* macaron/* organic-glass/* vintage/* square/* misc/* nirvana/* icons/*
+Files: flow/* bloom/* bloom-dark/* hazy-color/* macaron/* organic-glass/* vintage/* square/* misc/* nirvana/* icons/* *.dci *.desktop *.ts *.qrc
 Copyright: UnionTech Software Technology Co., Ltd.
 License: CC-BY-4.0
