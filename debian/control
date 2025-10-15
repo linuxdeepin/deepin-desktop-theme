@@ -6,7 +6,8 @@ Build-Depends: debhelper (>= 9),
    cmake,
    qt6-base-dev,
    qt6-base-private-dev,
-   libdtk6core-dev,
+   qt6-tools-dev,
+   libdtk6widget-dev
 Standards-Version: 3.9.8
 Homepage: http://www.deepin.org
 
@@ -81,3 +82,11 @@ Depends:
    ${misc:Depends},${shlibs:Depends},
 Description: deepin desktop theme
  This package is DeepinDesktopTheme
+
+Package: deepin-xdgicon-convert
+Architecture: any
+Depends:
+   libdtk6gui-bin,
+   ${misc:Depends},${shlibs:Depends},
+Description: deepin xdgicon convert tool
+ This package provides a tool to convert xdg icon theme to debian icon theme.

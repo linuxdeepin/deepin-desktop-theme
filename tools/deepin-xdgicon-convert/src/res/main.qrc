@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/dsg/icons">
+        <file>convert.dci</file>
+        <file>close.dci</file>
+    </qresource>
+</RCC>

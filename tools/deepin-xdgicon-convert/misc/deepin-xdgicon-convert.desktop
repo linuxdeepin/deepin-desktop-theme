@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=Application
+Comment=
+Exec=deepin-xdgicon-convert
+GenericName=deepin xdgicon convert tool
+Icon=preferences-system
+Name=deepin xdgicon convert tool
+StartupNotify=false
+Terminal=false
+Type=Application
+X-Deepin-Vendor=deepin
+GenericName[zh_CN]=主题图标转换工具
