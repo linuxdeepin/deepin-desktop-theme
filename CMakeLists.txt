@@ -4,6 +4,11 @@ message(${CMAKE_CURRENT_SOURCE_DIR})
 
 project(deepin-desktop-theme)
 
+if(NOT DEFINED VERSION)
+    set(VERSION 1.0.0)
+endif()
+add_definitions(-DVERSION="${VERSION}")
+
 add_subdirectory("bloom")
 add_subdirectory("vintage")
 add_subdirectory("flow")

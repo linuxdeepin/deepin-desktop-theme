@@ -49,4 +49,5 @@ target_link_libraries(${TOOL_NAME}
 
 install(TARGETS ${TOOL_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(FILES ${TR_QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/${TOOL_NAME}/translations)
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/misc/${TOOL_NAME}.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/misc/deepin-xdgicon-convert.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/misc/deepin-xdgicon-convert.svg DESTINATION ${CMAKE_INSTALL_DATADIR}/icons/hicolor/scalable/apps/)
