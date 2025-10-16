@@ -17,6 +17,7 @@ add_subdirectory("organic-glass")
 add_subdirectory("macaron")
 add_subdirectory("square")
 add_subdirectory("nirvana")
+add_subdirectory("origin")
 
 add_subdirectory("tools")
 
