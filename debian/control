@@ -66,6 +66,12 @@ Depends: ${misc:Depends},${shlibs:Depends},
 Description: deepin desktop-environment - nirvana theme
  deepin theme nirvana.
 
+Package: deepin-theme-origin
+Architecture: any
+Depends: ${misc:Depends},${shlibs:Depends},
+Description: deepin desktop-environment - origin theme
+ deepin theme origin.
+
 Package: deepin-desktop-theme
 Architecture: any
 Depends:
@@ -78,6 +84,7 @@ Depends:
    deepin-theme-square,
    deepin-theme-macaron,
    deepin-theme-nirvana,
+   deepin-theme-origin,
    libdtk6gui-bin,
    ${misc:Depends},${shlibs:Depends},
 Description: deepin desktop theme
