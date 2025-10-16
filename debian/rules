@@ -6,3 +6,9 @@ include /usr/share/dpkg/default.mk
 
 %:
 	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- \
+	-DCMAKE_BUILD_TYPE=Release \
+	-DCMAKE_INSTALL_PREFIX=/usr \
+	-DVERSION=$(DEB_VERSION_UPSTREAM) \

@@ -1,3 +1,4 @@
 usr/bin/deepin-xdgicon-convert
 usr/share/deepin-xdgicon-convert/translations/*
 usr/share/applications/deepin-xdgicon-convert.desktop
+usr/share/icons/hicolor/scalable/apps/deepin-xdgicon-convert.svg

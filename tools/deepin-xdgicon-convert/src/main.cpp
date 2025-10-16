@@ -15,6 +15,8 @@ int main(int argc, char *argv[])
     DApplication app(argc, argv);
 
     app.setApplicationName("deepin-xdgicon-convert");
+    app.setProductIcon(QIcon::fromTheme("deepin-xdgicon-convert"));
+    app.setApplicationVersion(VERSION);
     app.loadTranslator();
 
     DLogManager::registerConsoleAppender();

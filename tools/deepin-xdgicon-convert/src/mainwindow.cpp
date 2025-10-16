@@ -12,10 +12,13 @@
 #include <QStandardPaths>
 #include <QDesktopServices>
 
+#include <DTitlebar>
+
 MainWindow::MainWindow(QWidget *parent)
     : DMainWindow(parent)
 {
     m_worker = new ConvertWorker(this);
+    titlebar()->setIcon(QIcon::fromTheme("deepin-xdgicon-convert"));
     initUI();
 
     connect(m_fileChooserWidget, &FileChooserWidget::checkStatusChanged, this, [this](bool ok){
