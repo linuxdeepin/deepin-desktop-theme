@@ -82,7 +82,6 @@ Depends:
    deepin-theme-hazy-color,
    deepin-theme-flow,
    deepin-theme-square,
-   deepin-theme-macaron,
    deepin-theme-nirvana,
    deepin-theme-origin,
    libdtk6gui-bin,
