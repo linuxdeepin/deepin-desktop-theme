@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.20) unstable; urgency=medium
+
+  * chore: simplify theme package dependencies
+
+ -- wujiangyu <wujiangyu@uniontech.com>  Thu, 23 Oct 2025 17:35:16 +0800
+
 deepin-desktop-theme (1.1.19) unstable; urgency=medium
 
   * fix: remove deepin-theme-macaron from package dependencies
