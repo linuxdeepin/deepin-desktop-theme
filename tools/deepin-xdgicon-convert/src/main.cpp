@@ -5,6 +5,7 @@
 #include "mainwindow.h"
 
 #include <DApplication>
+#include <DWidgetUtil>
 #include <LogManager.h>
 
 DWIDGET_USE_NAMESPACE
@@ -24,6 +25,7 @@ int main(int argc, char *argv[])
 
     MainWindow w;
     w.resize(450, 360);
+    Dtk::Widget::moveToCenter(&w);
     w.show();
 
     return app.exec();
