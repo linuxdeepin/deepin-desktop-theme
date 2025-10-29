@@ -17,6 +17,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : DMainWindow(parent)
 {
+    setWindowFlag(Qt::WindowMaximizeButtonHint, false);
     m_worker = new ConvertWorker(this);
     titlebar()->setIcon(QIcon::fromTheme("deepin-xdgicon-convert"));
     initUI();
@@ -79,6 +80,7 @@ void MainWindow::initFileChooserPage()
     m_fileChooserEdit->setFileMode(QFileDialog::Directory);
     m_fileChooserEdit->setDialogDisplayPosition(DFileChooserEdit::CurrentMonitorCenter);
     m_fileChooserEdit->lineEdit()->setText(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
+    m_fileChooserEdit->lineEdit()->setReadOnly(true);
     dirChooserLayout->addWidget(new QLabel(tr("Save to:")));
     dirChooserLayout->addWidget(m_fileChooserEdit);
     m_convertButton = new QPushButton(tr("Start Conversion"));
@@ -147,6 +149,7 @@ void MainWindow::initConvertSuccessPage()
     layout->addWidget(m_finishButton, 0, Qt::AlignHCenter);
 
     connect(m_finishButton, &QPushButton::clicked, this, [this]() {
+        m_fileChooserWidget->clearFile();
         m_stackedWidget->setCurrentIndex(PAGE_FILE_CHOOSER);
     });
 

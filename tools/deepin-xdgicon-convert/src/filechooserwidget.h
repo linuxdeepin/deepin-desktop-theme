@@ -31,6 +31,7 @@ public:
     ~FileChooserWidget() override;
 
     inline QString getFilePath() const { return m_filePath; }
+    void clearFile();
 
 protected:
     void paintEvent(QPaintEvent *event) override;
@@ -49,7 +50,6 @@ signals:
 private:
     void initUI();
     void selectFile(const QString &filePath);
-    void clearFile();
 
 private:
     QStackedWidget *m_stackedWidget = nullptr;
