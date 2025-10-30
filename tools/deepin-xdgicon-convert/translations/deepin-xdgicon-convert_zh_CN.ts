@@ -67,4 +67,11 @@
         <translation>完成</translation>
     </message>
 </context>
+<context>
+    <name>QObject</name>
+    <message>
+        <source>Theme Icon Converter</source>
+        <translation>主题图标转换器</translation>
+    </message>
+</context>
 </TS>

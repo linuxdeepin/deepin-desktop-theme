@@ -2,11 +2,11 @@
 Categories=Application
 Comment=
 Exec=deepin-xdgicon-convert
-GenericName=deepin xdgicon convert tool
+GenericName=Theme Icon Converter
 Icon=deepin-xdgicon-convert
 Name=deepin xdgicon convert tool
 StartupNotify=false
 Terminal=false
 Type=Application
 X-Deepin-Vendor=deepin
-GenericName[zh_CN]=主题图标转换工具
+GenericName[zh_CN]=主题图标转换器

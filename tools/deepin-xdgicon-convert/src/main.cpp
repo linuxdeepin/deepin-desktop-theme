@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
 {
     DApplication app(argc, argv);
 
-    app.setApplicationName("deepin-xdgicon-convert");
     app.setProductIcon(QIcon::fromTheme("deepin-xdgicon-convert"));
     app.setApplicationVersion(VERSION);
     app.loadTranslator();
+    app.setApplicationDisplayName(QObject::tr("Theme Icon Converter"));
 
     DLogManager::registerConsoleAppender();
     DLogManager::registerJournalAppender();
