@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.1.21) unstable; urgency=medium
+
+  * feat: update application display name and translations
+  * feat: improve UI layout and add file clearing functionality
+
+ -- Robertkill <lvpeilong@uniontech.com>  Thu, 30 Oct 2025 20:09:22 +0800
+
 deepin-desktop-theme (1.1.20) unstable; urgency=medium
 
   * chore: simplify theme package dependencies
