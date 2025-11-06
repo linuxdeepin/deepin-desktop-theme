@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.1.22) unstable; urgency=medium
+
+  * chore: update theme icons
+  * chore: Remove unnecessary semicolons
+
+ -- caixiangrong <caixiangrong@uniontech.com>  Thu, 06 Nov 2025 16:27:38 +0800
+
 deepin-desktop-theme (1.1.21) unstable; urgency=medium
 
   * feat: update application display name and translations
