@@ -81,6 +81,7 @@ void MainWindow::initFileChooserPage()
     m_fileChooserEdit->setDialogDisplayPosition(DFileChooserEdit::CurrentMonitorCenter);
     m_fileChooserEdit->lineEdit()->setText(QStandardPaths::writableLocation(QStandardPaths::DesktopLocation));
     m_fileChooserEdit->lineEdit()->setReadOnly(true);
+    m_fileChooserEdit->lineEdit()->setClearButtonEnabled(false);
     dirChooserLayout->addWidget(new QLabel(tr("Save to:")));
     dirChooserLayout->addWidget(m_fileChooserEdit);
     m_convertButton = new QPushButton(tr("Start Conversion"));
