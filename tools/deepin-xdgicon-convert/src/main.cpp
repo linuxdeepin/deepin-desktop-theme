@@ -20,6 +20,11 @@ int main(int argc, char *argv[])
     app.loadTranslator();
     app.setApplicationDisplayName(QObject::tr("Theme Icon Converter"));
 
+    if(!app.setSingleInstance(app.applicationName())) {
+        qWarning() << "deepin-xdgicon-convert is running...";
+        return 1;
+    }
+
     DLogManager::registerConsoleAppender();
     DLogManager::registerJournalAppender();
 
