@@ -1,3 +1,10 @@
+deepin-desktop-theme (1.1.24) unstable; urgency=medium
+
+  * feat: add single instance check for icon converter
+  * feat: add Visual Studio Code icon
+
+ -- fuleyi <fuleyi@uniontech.com>  Thu, 04 Dec 2025 19:12:35 +0800
+
 deepin-desktop-theme (1.1.23) unstable; urgency=medium
 
   * fix: disable clear button in file chooser
