@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.25) unstable; urgency=medium
+
+  * feat: add dde-grand-search icon file
+
+ -- YeShanShan <yeshanshan@uniontech.com>  Thu, 11 Dec 2025 20:31:39 +0800
+
 deepin-desktop-theme (1.1.24) unstable; urgency=medium
 
   * feat: add single instance check for icon converter
