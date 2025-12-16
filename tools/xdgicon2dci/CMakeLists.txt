@@ -4,6 +4,9 @@ project(xdgicon2dci)
 
 find_package(Qt6 COMPONENTS Core Gui REQUIRED)
 find_package(Dtk6 COMPONENTS Core REQUIRED)
+if(Qt6_VERSION VERSION_GREATER_EQUAL 6.10)
+    find_package(Qt6 COMPONENTS GuiPrivate REQUIRED)
+endif()
 
 add_executable(xdgicon2dci main.cpp)
 target_link_libraries(xdgicon2dci PRIVATE
