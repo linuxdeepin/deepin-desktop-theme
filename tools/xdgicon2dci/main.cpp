@@ -15,6 +15,7 @@
 #include <QTemporaryDir>
 #include <DLog>
 #include <QLoggingCategory>
+#include <QElapsedTimer>
 
 #include <private/qiconloader_p.h>
 

@@ -9,6 +9,7 @@
 #include <QDir>
 #include <QRegularExpression>
 #include <QCryptographicHash>
+#include <QElapsedTimer>
 
 #define DPKG_TOOL "/usr/bin/dpkg-deb"
 #define DTK6_DCI_THEME_TOOL "/usr/libexec/dtk6/DGui/bin/dci-icon-theme"
