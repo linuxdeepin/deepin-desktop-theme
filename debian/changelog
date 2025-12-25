@@ -1,3 +1,11 @@
+deepin-desktop-theme (1.1.26) unstable; urgency=medium
+
+  * feat: add ETR icon files
+  * fix: add missing QElapsedTimer includes for Qt6
+  * fix(build): require Qt6 GuiPrivate on Qt >= 6.10
+
+ -- zhangkun <zhangkun2@uniontech.com>  Thu, 25 Dec 2025 19:34:52 +0800
+
 deepin-desktop-theme (1.1.25) unstable; urgency=medium
 
   * feat: add dde-grand-search icon file
