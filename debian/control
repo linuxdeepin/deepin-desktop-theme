@@ -89,5 +89,6 @@ Architecture: any
 Depends:
    libdtk6gui-bin,
    ${misc:Depends},${shlibs:Depends},
+Recommends: libdtk6gui-bin (>= 6.0.48)
 Description: deepin xdgicon convert tool
  This package provides a tool to convert xdg icon theme to debian icon theme.
