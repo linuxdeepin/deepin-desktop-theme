@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2025 UnionTech Software Technology Co., Ltd.
+// SPDX-FileCopyrightText: 2025 - 2026 UnionTech Software Technology Co., Ltd.
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -21,7 +21,7 @@
 // 整理后的xdg图标路径
 #define XDG_ICON_DIR QString(TMP_DIR) + "/xdgicon"
 // 待打包deb路径
-#define TAR_DEB_DIR QString(TMP_DIR) + "/tar_deb"
+#define TMP_DEB_DIR QString(TMP_DIR) + "/tar_deb"
 // dci图标输出路径
 #define DCI_OUTPUT_DIR QString(UNPACK_DIR) + "/usr/share/dsg/icons"
 
@@ -131,11 +131,49 @@ bool ConvertHandler::xdgIcon2DciDeb(const QString &debFilePath, const QString &o
 
     emit convertProgressChanged(80);
 
-    // 5 打包
-    if (!doPackageDeb(UNPACK_DIR, outDir)) {
+    // 5 打包 和 复制到目标路径
+    if (!doPackageDeb(UNPACK_DIR, TMP_DEB_DIR)) {
         emit convertFinished(false);
         return false;
     }
+
+    // TMP_DEB_DIR 遍历复制deb到目标路径，这里面应该只会有一个deb文件
+    QDir tmpDebDir(TMP_DEB_DIR);
+    if (!tmpDebDir.exists()) {
+        qWarning() << "tmp deb dir not exists:" << TMP_DEB_DIR;
+        emit convertFinished(false);
+        return false;
+    }
+    const auto debEntries = tmpDebDir.entryInfoList(QDir::Files | QDir::NoDotAndDotDot);
+    if (debEntries.isEmpty()) {
+        qWarning() << "no deb file found in tmp deb dir:" << TMP_DEB_DIR;
+        emit convertFinished(false);
+        return false;
+    }
+    if (debEntries.size() > 1) {
+        qWarning() << "multiple deb files found in tmp deb dir:" << TMP_DEB_DIR;
+        emit convertFinished(false);
+        return false;
+    }
+    const QString convertedDebPath = debEntries.first().absoluteFilePath();
+    // 如果目标文件已存在，追加 _1、_2 … 直到没有冲突，而不是直接覆盖
+    QString targetDebPath = outDir + "/" + debEntries.first().fileName();
+    if (QFile::exists(targetDebPath)) {
+        QFileInfo fi(debEntries.first().fileName());
+        const QString baseName = fi.completeBaseName();
+        const QString suffix = fi.suffix().isEmpty() ? QString() : "." + fi.suffix();
+        int counter = 1;
+        do {
+            targetDebPath = outDir + "/" + baseName + "_" + QString::number(counter) + suffix;
+            ++counter;
+        } while (QFile::exists(targetDebPath));
+    }
+    if (!QFile::copy(convertedDebPath, targetDebPath)) {
+        qWarning() << "failed to copy converted deb to target path:" << convertedDebPath << "->" << targetDebPath;
+        emit convertFinished(false);
+        return false;
+    }
+    qInfo() << "converted deb copied to target path:" << targetDebPath;
 
     emit convertProgressChanged(100);
 
@@ -297,6 +335,12 @@ bool ConvertHandler::doConvert(const QString &xdgIconDir, const QString &outDir)
 bool ConvertHandler::doPackageDeb(const QString &debDir, const QString &outDir)
 {
     qInfo() << "package deb:" << debDir << outDir;
+
+    QDir dir(outDir);
+    if (dir.exists()) {
+        dir.removeRecursively();
+    }
+    dir.mkpath(outDir);
 
     QProcess process;
     QStringList args;
