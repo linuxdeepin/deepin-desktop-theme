@@ -1,3 +1,9 @@
+deepin-desktop-theme (1.1.30) unstable; urgency=medium
+
+  * feat: add Firefox icons for NAL and ZH locales
+
+ -- zhangkun <zhangkun2@uniontech.com>  Thu, 09 Apr 2026 20:29:34 +0800
+
 deepin-desktop-theme (1.1.29) unstable; urgency=medium
 
   * fix: prevent deb file overwrite and improve packaging
