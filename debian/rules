@@ -4,6 +4,11 @@ export QT_SELECT=5
 
 include /usr/share/dpkg/default.mk
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+export DEB_CFLAGS_MAINT_APPEND = -Wall -Wl,-E -fPIE
+export DEB_CXXFLAGS_MAINT_APPEND = -Wall -Wl,-E -fPIE
+export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed -Wl,-z,noexecstack -pie
+
 %:
 	dh $@ --buildsystem=cmake
 
