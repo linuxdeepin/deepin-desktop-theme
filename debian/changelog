@@ -1,3 +1,12 @@
+deepin-desktop-theme (6.2.0) unstable; urgency=medium
+
+  * style: normalize SVG icons and add software status icons
+  * fix(origin): update UosAiAssistant icon artwork
+  * fix(nirvana): replace mis-packaged network icons
+  * feat(flow): add and update some icons
+
+ -- zhangkun <zhangkun2@uniontech.com>  Wed, 18 Nov 2026 11:15:42 +0800
+
 deepin-desktop-theme (1.1.31) unstable; urgency=medium
 
   * feat: add deepin-dde common icons
